@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabla de ganancias gastos></title> 
+        <link rel="stylesheet" href="P1.css">
+        <style>
+        table {
+            width: 70%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #33be09;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #860c0c;
+        }
+        input {
+            width: 90%;
+            padding: 5px;
+            text-align: center;
+        }
+        .positivo {
+            color: rgb(52, 13, 192);
+        }
+        .negativo {
+            color: rgb(179, 226, 10);
+        }
+    </style>
+
+   <style>
+       body {
+        background-color: aquamarine;
+
+   </style>     
+
+    <h1 style="text-align:center;">Tabla de Ganancias y Pérdidas</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Mes</th>
+                <th>Ingresos ($)</th>
+                <th>Gastos ($)</th>
+                <th>Resultado</th>
+        
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Enero</td>
+                <td><input type="number" id="ingreso1" placeholder="Ingresos" onchange="calcular(1)"></td>
+                <td><input type="number" id="gasto1" placeholder="Gastos" onchange="calcular(1)"></td>
+                <td id="resultado1"></td>
+            </tr>
+            <tr>
+                <td>Febrero</td>
+                <td><input type="number" id="ingreso2" placeholder="Ingresos" onchange="calcular(2)"></td>
+                <td><input type="number" id="gasto2" placeholder="Gastos" onchange="calcular(2)"></td>
+                <td id="resultado2"></td>
+            </tr>
+            <tr>
+                <td>Marzo</td>
+                <td><input type="number" id="ingreso3" placeholder="Ingresos" onchange="calcular(3)"></td>
+                <td><input type="number" id="gasto3" placeholder="Gastos" onchange="calcular(3)"></td>
+                <td id="resultado3"></td>
+            </tr>
+        </tbody>
+    </table>
+        
+    
+</head>
+<body>
+    
+</body>
+</html>
